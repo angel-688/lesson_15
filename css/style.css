@@ -494,7 +494,8 @@ a.order-data__title:hover {
 }
 
 .item-dish__image-block img {
-   max-width: 100% border-radius: 6px;
+   max-width: 100%;
+   border-radius: 6px;
 }
 
 .item-dish__label {
