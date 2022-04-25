@@ -327,9 +327,6 @@ a.order-data__title:hover {
 
 .basic__slider {
    position: relative;
-   display: flex;
-   justify-content: center;
-   column-gap: 34px;
 }
 
 
@@ -363,15 +360,34 @@ a.order-data__title:hover {
    transform: rotate(-180deg);
 }
 
-
-.basic__slide {}
-
-.basic__image {
-   flex: 0 0 350px;
+.basic__body {
+   position: relative;
+   display: flex;
+   max-width: 700px;
+   margin: 0px auto;
 }
 
+.basic__slide {
+   flex: 0 1 50%;
+   padding: 0px 17px;
+}
+
+
+.basic__image {
+   position: relative;
+   max-width: 350px;
+   padding: 0px 0px 85.215% 0px;
+   overflow: hidden;
+}
+
+
 .basic__image img {
-   max-width: 100%
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   object-fit: cover;
 }
 
 /* HOW-WORKS ================================================================================== */
@@ -491,11 +507,18 @@ a.order-data__title:hover {
 .item-dish__image-block {
    position: relative;
    max-width: 350px;
+   padding: 0px 0px 74.5% 0px;
+   overflow: hidden;
+   max-height: 260px;
 }
 
-.item-dish__image-block img {
+.item-dish__image {
    max-width: 100%;
    border-radius: 6px;
+   position: absolute;
+   object-fit: cover;
+   top: 0;
+   left: 0;
 }
 
 .item-dish__label {
@@ -709,14 +732,14 @@ a.order-data__title:hover {
 
 .item-chefs__avatar {
    flex: 0 0 65px;
-   max-height: 65px;
+   height: 65px;
    margin: 0px 24px 0px 0px;
 }
 
 .item-chefs__avatar img {
    border-radius: 50%;
-   max-width: 100%;
-   max-height: 100%;
+   width: 100%;
+   height: 100%;
 }
 
 .item-chefs__name-block {}
